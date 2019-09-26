@@ -27,5 +27,7 @@
     "lint-staged": "^9.4.0",
     "prettier": "^1.18.2"
   },
-  "scripts": {}
+  "scripts": {
+    "manual": "node index.js"
+  }
 }
