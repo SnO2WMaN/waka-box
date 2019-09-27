@@ -1,6 +1,7 @@
 {
   "name": "waka-box",
-  "license": "ISC",
+  "description": "pinned gist box for WakaTime",
+  "license": "MIT",
   "author": "SnO2WMaN <sno2wman.official@gmail.com>",
   "homepage": "https://github.com/SnO2WMaN/waka-box#readme",
   "repository": {
@@ -27,6 +28,10 @@
     "lint-staged": "^9.4.0",
     "prettier": "^1.18.2"
   },
+  "keywords": [
+    "pinned-box",
+    "wakatime"
+  ],
   "scripts": {
     "manual": "node index.js"
   }
