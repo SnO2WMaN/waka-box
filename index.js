@@ -38,7 +38,7 @@ async function updateGist(stats) {
     console.error(`Unable to get gist\n${error}`)
   }
   const lines = []
-  for (let i = 0; i < Math.min(stats.data.languages.length, 5); i += 1) {
+  for (let i = 0; i < stats.data.languages.length; i += 1) {
     const data = stats.data.languages[i]
     const { name, percent, text: time } = data
 
@@ -56,8 +56,8 @@ async function updateGist(stats) {
     const filename = Object.keys(gist.data.files)[0]
     await octokit.gists.update({
       gist_id: gistId,
+      description: `📊 Weekly development breakdown`,
       files: {
-        filename: `📊 Weekly development breakdown`,
         [filename]: {
           filename: `📊 Weekly development breakdown`,
           content: lines.join('\n')
