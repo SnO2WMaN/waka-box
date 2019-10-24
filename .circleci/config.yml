@@ -15,7 +15,7 @@ commands:
             - node_modules
 
 jobs:
-  musicbox:
+  wakabox:
     working_directory: ~/repo
     docker:
       - image: circleci/node:lts
