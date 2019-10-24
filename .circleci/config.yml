@@ -28,7 +28,7 @@ workflows:
 
   test:
     jobs:
-      - musicbox
+      - wakabox
 
   poll:
     triggers:
@@ -39,4 +39,4 @@ workflows:
               only:
                 - master
     jobs:
-      - musicbox
+      - wakabox
