@@ -20,7 +20,7 @@
     "wakatime-client": "^2.0.3"
   },
   "devDependencies": {
-    "@conten2/eslint-config": "^1.0.0-5",
+    "@conten2/eslint-config": "^2.0.0",
     "@conten2/prettier-config": "^1.0.0",
     "@sno2wman/prettier-package-json": "^2.0.2",
     "eslint": "^6.4.0",
