@@ -23,20 +23,13 @@ function generateBarChart(percent, size) {
   const barsEmpty = size - barsFull - 1
 
   return [
-    syms.substring(8, 9).repeat(barsFull),
-    syms.substring(semi, semi + 1),
-    syms.substring(0, 1).repeat(barsEmpty)
+    syms.slice(8, 9).repeat(barsFull),
+    syms.slice(semi, 1),
+    syms.slice(0, 1).repeat(barsEmpty)
   ].join('')
 }
 
 async function updateGist(stats) {
-  let gist
-  try {
-    gist = await octokit.gists.get({ gist_id: gistId })
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error(`Unable to get gist\n${error}`)
-  }
   const lines = []
   for (let i = 0; i < stats.data.languages.length; i += 1) {
     const data = stats.data.languages[i]
@@ -53,13 +46,11 @@ async function updateGist(stats) {
   }
   try {
     // Get original filename to update that same file
-    const filename = Object.keys(gist.data.files)[0]
     await octokit.gists.update({
       gist_id: gistId,
-      description: `📊 Weekly development breakdown`,
+      description: 'https://github.com/SnO2WMaN/waka-box',
       files: {
-        [filename]: {
-          filename: `📊 Weekly development breakdown`,
+        '📊 Weekly development breakdown': {
           content: lines.join('\n')
         }
       }
