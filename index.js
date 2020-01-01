@@ -48,7 +48,7 @@ async function updateGist(stats) {
     // Get original filename to update that same file
     await octokit.gists.update({
       gist_id: gistId,
-      description: 'https://github.com/SnO2WMaN/waka-box',
+      description: '📊 Weekly development breakdown',
       files: {
         '📊 Weekly development breakdown': {
           content: lines.join('\n')
