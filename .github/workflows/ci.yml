@@ -3,13 +3,11 @@ name: Node CI
 on:
   push:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '*/20 * * * *'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - uses: actions/checkout@v1
       - name: Get Node.js version
