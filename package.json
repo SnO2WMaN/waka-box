@@ -20,8 +20,8 @@
     "wakatime-client": "^2.0.3"
   },
   "devDependencies": {
-    "@conten2/eslint-config": "^1.0.0-5",
-    "@conten2/prettier-config": "^1.0.0",
+    "@sno2wman/eslint-config": "^1.0.3",
+    "@sno2wman/prettier-config": "^1.0.2",
     "@sno2wman/prettier-package-json": "^2.0.2",
     "eslint": "^6.4.0",
     "husky": "^3.0.5",
@@ -33,6 +33,8 @@
     "wakatime"
   ],
   "scripts": {
-    "manual": "node index.js"
+    "lint": "eslint index.js --fix",
+    "fmt": "prettier index.js --write",
+    "generate": "node index.js"
   }
 }
