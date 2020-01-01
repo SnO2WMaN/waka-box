@@ -1,11 +1,6 @@
-<h1 align="center">waka-box (clone)</h1>
+<h1 align="center">waka-box</h1>
 
-## Original
+[![Actions Status](https://github.com/SnO2WMaN/waka-box/workflows/Node%20CI/badge.svg)](https://github.com/SnO2WMaN/waka-box/actions)
+[![GitHub](https://img.shields.io/github/license/SnO2WMaN/waka-box)](https://github.com/SnO2WMaN/waka-box/blob/master/LICENSE)
 
-[matchai/waka-box](https://github.com/matchai/waka-box) ([License](https://github.com/matchai/waka-box/blob/master/LICENSE))
-
-Because it can no longer trigger Github Action in **Folked Repository**
-
-## License
-
-[MIT License](https://github.com/SnO2WMaN/waka-box/blob/master/LICENSE)
+[gist](https://gist.github.com/SnO2WMaN/c9af3331cfd9897233364708bfdef222)
